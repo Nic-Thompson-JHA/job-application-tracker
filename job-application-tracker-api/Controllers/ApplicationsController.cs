@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace job_application_tracker_api.Controllers
 {
-    [Route("[controller]")]
+    [Route("applications")]
     [ApiController]
     public class ApplicationsController : ControllerBase
     {

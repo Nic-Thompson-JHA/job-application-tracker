@@ -1,7 +1,10 @@
+using System.Text.Json.Serialization;
+
 namespace job_application_tracker_api.Data.Models
 {
     public class JobApplication
     {
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public enum ApplicationStatus
         {
             Interview,

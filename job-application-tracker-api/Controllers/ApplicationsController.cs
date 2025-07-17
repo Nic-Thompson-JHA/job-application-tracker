@@ -66,7 +66,7 @@ namespace job_application_tracker_api.Controllers
         }
 
         [HttpPut("{id:int}")]
-        public async Task<ActionResult<JobApplication>> UpdateEmployee(int id, JobApplication jobApplication)
+        public async Task<ActionResult<JobApplication>> UpdateJobApplication(int id, JobApplication jobApplication)
         {
             try
             {

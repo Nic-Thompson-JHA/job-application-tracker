@@ -7,6 +7,7 @@ namespace job_application_tracker_api.Data.Models
         [JsonConverter(typeof(JsonStringEnumConverter))]
         public enum ApplicationStatus
         {
+            Applied,
             Interview,
             Offer,
             Rejected
@@ -20,7 +21,7 @@ namespace job_application_tracker_api.Data.Models
 
         public ApplicationStatus? Status { get; set; }
 
-        public DateTime DateApplied { get; set; }
+        public required DateTime DateApplied { get; set; }
 
         public string? Actions { get; set; }
     }

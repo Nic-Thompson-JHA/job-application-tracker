@@ -51,6 +51,7 @@ namespace job_application_tracker_api.Data.Db
 
             application.CompanyName = jobApplication.CompanyName;
             application.Position = jobApplication.Position;
+            application.DateApplied = jobApplication.DateApplied;
             application.Status = jobApplication.Status;
             application.Actions = jobApplication.Actions;
 
